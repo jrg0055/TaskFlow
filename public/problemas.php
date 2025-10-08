@@ -163,4 +163,29 @@ foreach ($notas as $nota) {
         echo "Nota: $nota - " . ($nota >= 5 ? "Aprobado" : "Suspenso") . "<br>";
     }
 }
+
+// Problema 3
+$listaCompra = [
+"Frutas" => ["Manzanas", "Plátanos", "Naranjas"],
+"Lácteos" => ["Leche", "Queso"],
+"Limpieza" => ["Detergente", "Lejía"]
+];
+foreach ($listaCompra as $categoria => $productos) {
+    foreach ($productos as $producto) {
+        echo "$categoria: $producto" . "<br>";
+    }
+}
+
+// Problema 4
+$productos = [
+["nombre" => "Teclado", "precio" => 50],
+["nombre" => "Ratón", "precio" => 25],
+["nombre" => "Monitor", "precio" => 200]
+];
+$total = 0;
+foreach ($productos as $producto) {
+    echo "Producto: " . $producto["nombre"] . ", Precio: " . $producto["precio"] . "<br>";
+    $total += $producto["precio"];
+}
+echo "Precio total: $total";
 ?>
