@@ -188,4 +188,15 @@ foreach ($productos as $producto) {
     $total += $producto["precio"];
 }
 echo "Precio total: $total";
+
+echo "
+<br>
+<p style='color:red; text-align: center; font-weight: 600; font-size: 2rem;' >¡Felicidades! Has completado todos los problemas.</p>";
+echo "
+<div style='display: flex; justify-content: center; align-items: center; height: 15vh; outline: 3px solid #086d0bff;'>
+  <button style='padding: 30px 80px; font-size: 1.2rem; background-color: #086d0bff; color: white; border-radius: 1rem; border: none;'>
+    Probando
+  </button>
+</div>
+";
 ?>
