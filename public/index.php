@@ -14,17 +14,17 @@
         ],
         [
             "title" => "tarea 2",
-            "completed" => true,
+            "completed" => false,
             "priority" => "media"
         ],
         [
             "title" => "tarea 3",
-            "completed" => true,
+            "completed" => false,
             "priority" => "baja"
         ],
         [
             "title" => "tarea 4",
-            "completed" => true,
+            "completed" => false,
             "priority" => "alta"
         ],
         [

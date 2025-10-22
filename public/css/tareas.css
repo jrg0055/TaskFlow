@@ -1,3 +1,21 @@
 * {
-    background-color: blue;
+    background-color: white;
+}
+
+.task-item {
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+}
+.completed {
+    /* tachar */
+    text-decoration: line-through;
+}
+.priority-alta {
+    border-left: 4px solid red;
+}
+.priority-media {
+    border-left: 4px solid rgb(255, 208, 0);
+}
+.priority-baja {
+    border-left: 4px solid rgb(0, 145, 255);
 }
