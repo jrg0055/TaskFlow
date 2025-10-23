@@ -1,4 +1,6 @@
 <?php
+    require_once __DIR__ . '/../app/functions.php';
+
     const SITE_NAME = "TaskFlow";
     $pageTitle = SITE_NAME . " - Página de Inicio";
 
@@ -42,22 +44,7 @@
         <ul>
             <?php
                 foreach ($tasks as $task) {
-                    $taskClasses = 'task-item';
-                    if ($task['completed']) {
-                        $taskClasses .= ' completed';
-                    }
-                    switch ($task['priority']) {
-                        case 'alta':
-                            $taskClasses .= ' priority-alta';
-                            break;
-                        case 'media':
-                            $taskClasses .= ' priority-media';
-                            break;
-                        case 'baja':
-                            $taskClasses .= ' priority-baja';
-                            break;
-                    }
-                    echo '<li class="'.$taskClasses.'">'.$task["title"].'</li>';
+                    echo renderizarTarea($task);
                 }
             ?>
         </ul>
