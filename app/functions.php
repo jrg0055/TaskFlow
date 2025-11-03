@@ -18,7 +18,7 @@ function renderizarTarea($task) {
         $taskClasses .= ' completed';
     }
     $taskClasses .= obtenerClasePrioridad($task['priority']);
-    return '<li class="'.$taskClasses.'">'.$task["title"].'</li>';
+    return '<li class="'.$taskClasses.'">'. htmlspecialchars($task["title"]).'</li>';
 }
 
 ?>
